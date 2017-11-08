@@ -35,5 +35,7 @@ public class Registradora {
         venda.efetuarPagamento(nastacia);
     }
     
-
+    public void adicionarProdutos(int id, String nome, float preco){
+        catalogo.adicionarProduto(id, nome, preco);
+    }
 }
