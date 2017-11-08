@@ -33,4 +33,9 @@ public class CatalogoProduto {
     public EspecProduto acharEspec(Integer i){
         return this.mapa.get(i);
     }
+    
+    public void adicionarProduto(int id,String nome,float preco){
+        EspecProduto pn = new EspecProduto(preco,nome,id);
+        mapa.put(id,pn);
+    }
 }
