@@ -21,6 +21,7 @@ public class Mercadinho {
         Registradora regis = new Registradora();
         while(true){
             System.out.println("1. Nova Venda");
+            System.out.println("2. Novo Produto");
             System.out.println("0. Encerrar Programa");
             switch(ent.nextInt()){
                 case 1:
@@ -43,6 +44,10 @@ public class Mercadinho {
                             System.out.println("Insira uma opção válida.");
                         }
                     }while(true);
+                    break;
+                case 2:
+                    System.out.println("Insira o ID, Descricao e preco respectivamente");
+                    regis.adicionarProdutos(ent.nextInt(), ent.next(), ent.nextFloat());
                     break;
                 case 0:
                     System.exit(0);
